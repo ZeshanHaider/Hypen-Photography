@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Hyphen Photography</title>
+  <style>
+    header{
+      background-image: url('img/stars.jpg');
+      background-position: center;
+      min-height: 560px;
+      background-size: cover;
+    }
+
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    @media screen and (max-width: 571px){
+     .brand-logo{
+       visibility: hidden;
+     }
+    
+    }
+
+     @media screen and (max-width: 992px){
+     img#nature {
+    margin-top: 85px;
+     }
+    }
+
+    .tabs .tab a:hover, .tabs .tab a.active {
+    color:  indigo !important;
+    }
+
+    .tabs .tab a {
+        color:  indigo !important;
+    }
+
+    .tabs .indicator {
+        background-color: indigo !important;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background-color: #fff !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+      
+          <nav class="nav-wrapper transparent">
+           <div class="container">
+            <a href="#" class="brand-logo">Hyphen Photography</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#Photos">Photos</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+           </div>
+          </nav>
+        
+      
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#Photos">Photos</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+  </header>
+
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="Photos">
+    <div class="row">
+      <div class="col l4">
+        <img src="img/portrait.jpg" alt="portrait" class="responsive-img materialboxed">
+      </div>
+      <div class="col l1">
+          
+      </div>
+      <div class="col l6">
+          <h2 class="indigo-text">Portrait</h2>
+          <p>Portrait photography or portraiture in photography is a photograph of a person or group of people that captures the personality of the subject by using effective lighting, backdrops, and poses.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l1">
+          
+      </div>
+      
+      <div class="col l6 right-align">
+          <h2 class="indigo-text">Cityscapes</h2>
+          <p>In the visual arts a cityscape is an artistic representation, such as a painting, drawing, print or photograph, of the physical aspects of a city or urban area.</p>
+      </div>
+      <div class="col l1">
+          
+      </div>
+      <div class="col l4">
+          <img src="img/city.jpg" alt="city" class="responsive-img materialboxed">
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col l4">
+          <img id="nature" src="img/nature.jpg" alt="nature" class="responsive-img materialboxed">
+        </div>
+        <div class="col l1">
+          
+        </div>
+        <div class="col l6">
+            <h2 class="indigo-text">Nature</h2>
+            <p>Nature photography is a wide range of photography taken outdoors and devoted to displaying natural elements such as landscapes, wildlife, plants, and close-ups of natural scenes and textures.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/city2.png" alt="city" class="responsive-img">
+    </div>
+  </div>
+
+
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="Services">
+    <div class="row">
+      <div class="col l4">
+       <h2 class="indigo-text">What I do...</h2>
+       <p>My team of professional photographers has years of experience shooting people and products that capture our clients’ unique personality, show customer engagement and highlight product details.</p>
+      </div>
+
+      <div class="col l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab"><a href="#Photography">Photography</a></li>
+            <li class="tab"><a href="#Editing">Editing</a></li>         
+          </ul>
+        <div id="Photography">
+          <p class="flow-text indigo-text">Photography</p>
+          <p>Full-day or half-day photo shoots with all necessary equipment, professional camera and lens kits and professional lighting setup</p>
+        </div>
+        <div id="Editing">
+          <p class="flow-text indigo-text">Editing</p>
+          <p>Image editing encompasses the processes of altering images, whether they are digital photographs, traditional photo-chemical photographs, or illustrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+  <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/ice.jpg" alt="ice" class="responsive-img">
+      </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="container section scrollspy" id="Contact">
+    <div class="row">
+      <div class="col s12 l5">
+          <h2 class="indigo-text">Get In Touch</h2>
+          <p>Full-day or half-day photo shoots with all necessary equipment, professional camera and lens kits and professional lighting setup</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea class="materialize-textarea" name="message" id="message"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" class="datepicker" id="date">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services Required...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-fiel center">
+            <button class="btn ">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6">
+          <h5>About Me</h5>
+          <p>My team of professional photographers has years of experience shooting people and products that capture our clients’ unique personality, show customer engagement and highlight product details.</p>
+        </div>
+        <div class="col l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">
+        &copy; 2018 Hyphen Photography
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.scrollspy').scrollSpy();      
+    });
+  </script>
+</body>
+</html>
