@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+
+            var firstname= prompt("Enter first name");
+            var secondname= prompt("Enter second name");
+            var dob= prompt("Enter DOB");
+            var userdate = new Date(dob);
+            var currentdate = new Date();
+            var city= prompt("Enter city");
+            var area= prompt("Enter area");
+            var cnic= prompt("Enter cnic");
+ 
+            let Person = {
+                name: {
+                    objfirstname: firstname,
+                    objsecondname: secondname
+                },
+                objdob: `${userdate.getDate()}/${userdate.getMonth()+1}/${userdate.getFullYear()}`,
+                address: {
+                    objcity: city,
+                    objarea: area
+                },
+                objcnic: cnic,
+                getage: function(){
+                    console.log(currentdate.getFullYear()-userdate.getFullYear());
+                }
+            }
+            console.log(Person);
+            Person.getage();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
